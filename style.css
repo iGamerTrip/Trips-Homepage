@@ -36,6 +36,12 @@ a:hover {
 	text-decoration:none;
 }
 
+a:focus {
+	font-family:'Inter', serif; 
+	color:#D4F3B9; 
+	text-decoration:underline dashed;
+}
+
 p.space {
 	color:white; 
 	font-family:'Inter', serif; 
@@ -45,7 +51,7 @@ p.space {
 }
 
 .notmain {
-	border:0.35rem solid #1D1907; 
+	border:0.35rem solid #660606; 
 	padding:1rem; 
 	border-spacing:1.5rem; 
 	backdrop-filter: blur(15px); 
@@ -75,13 +81,13 @@ p.space {
 }
 
 @keyframes mouseover {
-	from {background-color: #070B1F00;}
-	to   {background-color: #070B1F33;}
+	from {background-color: rgba(7, 11, 31, 0); border:0.35rem solid #660606;}
+	to   {background-color: rgba(7, 11, 31, 0.2); border:0.35rem solid #520707;}
 }
 
 @keyframes mouseaway {
-	from {background-color: #070B1F33;}
-	to   {background-color: #070B1F00;}
+	from {background-color: rgba(7, 11, 31, 0.2); border:0.35rem solid #520707;}
+	to   {background-color: rgba(7, 11, 31, 0); border:0.35rem solid #660606;}
 }
 
 body.mainbody {
@@ -95,4 +101,68 @@ body.mainbody {
 }
 p.spacer {
 	margin-bottom:2.3rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6.1875rem;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 23%;
+  max-width: 25%;
+  padding: 0 1rem;
+}
+
+.column img {
+  margin-top: 1rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+img.cats {
+	border:0.35rem solid #520707;
+	border-radius:60px;
+	animation:mouseawaycats;
+	animation-duration: 0.15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+img.cats:hover {
+	border:0.35rem solid #490404;
+	border-radius:60px;
+	animation:mouseovercats;
+	animation-duration: 0.15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes mouseovercats {
+	from {border:0.35rem solid #520707;}
+	to   {border:0.35rem solid #000000;}
+}
+
+@keyframes mouseawaycats {
+	from {border:0.35rem solid #000000;}
+	to   {border:0.35rem solid #520707;}
 }
