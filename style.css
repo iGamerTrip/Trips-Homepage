@@ -85,7 +85,7 @@ p.space {
 }
 
 body.mainbody {
-	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.xyz/wp-content/uploads/2023/05/mainBG_M.webp") no-repeat top center;
+	background: linear-gradient(to top, #070B1F66, #070B1F33), url("assets\mainBG_M.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
