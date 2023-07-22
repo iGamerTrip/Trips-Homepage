@@ -46,14 +46,14 @@ p.space {
 	color:white; 
 	font-family:'Inter', serif; 
 	text-align:left; 
-	font-size:1vw; 
+	font-size:0.78vw; 
 	line-height:150%;
 }
 
 .notmain {
-	border:0.2184vw solid #660606; 
-	padding:0.624vw; 
-	border-spacing:0.936vw; 
+	border:0.35rem solid #660606; 
+	padding:1rem; 
+	border-spacing:1.5rem; 
 	backdrop-filter: blur(15px); 
 	background-color:#070B1F00; 
 	border-radius: 60px; 
@@ -62,7 +62,7 @@ p.space {
 	animation-duration: 0.15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	margin-bottom:1.56vw;
+	margin-bottom:2.5rem;
 }
 
 .notmain:hover {
@@ -91,81 +91,11 @@ p.space {
 }
 
 body.mainbody {
-	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://media.gamertrip.info/mainBG_M.webp") no-repeat top center;
+	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://media.gamertrip.info/frostBG_M.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-color:#070B1F;
 	padding-right:2.0625rem;
 	padding-left:2.0625rem;
-}
-
-/* this CSS is by W3Schools, thanks! */
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 6.1875rem;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 23%;
-  max-width: 25%;
-  padding: 0 1rem;
-}
-
-.column img {
-  margin-top: 1rem;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-/* the end of the W3Schools CSS, thanks again! */
-
-img.cats {
-	border:0.35rem solid #520707;
-	border-radius:60px;
-	animation:mouseawaycats;
-	animation-duration: 0.15s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-	max-width:100%;
-	height:auto;
-}
-
-img.cats:hover {
-	border:0.35rem solid #490404;
-	border-radius:60px;
-	animation:mouseovercats;
-	animation-duration: 0.15s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-	max-width:100%;
-	height:auto;
-}
-
-@keyframes mouseovercats {
-	from {border:0.35rem solid #520707;}
-	to   {border:0.35rem solid #000000;}
-}
-
-@keyframes mouseawaycats {
-	from {border:0.35rem solid #000000;}
-	to   {border:0.35rem solid #520707;}
 }
