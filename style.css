@@ -197,6 +197,6 @@ img.cats:hover {
 }
 
 img.discord {
-	max-width:0.9vw;
+	max-width:calc(12px + 0.40621vw);
 	height:auto;
 }
