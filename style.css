@@ -66,6 +66,9 @@ a:focus {
 	font-family:'Inter', serif; 
 	color:#D4F3B9; 
 	text-decoration:underline dashed;
+	animation:mouseoverlink;
+	animation-duration: 0s;
+	animation-fill-mode: both;
 }
 
 @keyframes mouseoverlink {
@@ -102,7 +105,7 @@ div.maindiv {
 	animation-duration: 0.15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	margin-bottom:calc(12px + .3521vw);
+	margin-bottom:calc(14px + .3621vw);
 }
 
 .sidediv:hover {
