@@ -93,8 +93,7 @@ div.maindiv {
 
 .notmain {
 	border:0.2184vw solid #660606; 
-	padding:calc(6px + .3521vw); 
-	border-spacing:0.936vw; 
+	padding:calc(12px + .3521vw);
 	backdrop-filter: blur(calc(8px + 0.3vw));
 	background-color:#070B1F00; 
 	border-radius:calc(16px + 1.75vw); 
@@ -191,13 +190,13 @@ img.cats:hover {
 }
 
 @keyframes mouseovercats {
-	from {border:0.35rem solid #520707;}
-	to   {border:0.35rem solid #000000;}
+	from {border:0.2184vw solid #520707;}
+	to   {border:0.2184vw solid #000000;}
 }
 
 @keyframes mouseawaycats {
-	from {border:0.35rem solid #000000;}
-	to   {border:0.35rem solid #520707;}
+	from {border:0.2184vw solid #000000;}
+	to   {border:0.2184vw solid #520707;}
 }
 
 img.discord {
