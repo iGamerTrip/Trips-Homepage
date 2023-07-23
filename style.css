@@ -18,7 +18,7 @@ p {
 
 h1 {
 	color:white; 
-	font-size:calc(42px + .3621vw); 
+	font-size:calc(48px + .35vw); 
 	font-weight:bold; 
 	font-family:'Inter', serif;
 	font-weight:700;
@@ -49,7 +49,7 @@ a {
 }
 
 a.subtitle {
-	font-size:calc(13px + .4621vw);
+	font-size:calc(16px + .4621vw);
 }
 
 a:hover {
@@ -91,7 +91,7 @@ div.maindiv {
 	padding-top:1.1712vw;
 }
 
-.notmain {
+.sidediv {
 	border:0.2184vw solid #660606; 
 	padding:calc(12px + .3521vw);
 	backdrop-filter: blur(calc(8px + 0.3vw));
@@ -102,10 +102,10 @@ div.maindiv {
 	animation-duration: 0.15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	margin-bottom:1.56vw;
+	margin-bottom:calc(12px + .3521vw);
 }
 
-.notmain:hover {
+.sidediv:hover {
 	animation-name:mouseover;
 	animation-duration: 0.2s;
 	animation-timing-function: ease-in-out;
