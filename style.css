@@ -4,8 +4,8 @@
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-color:#070B1F;
-	padding-right:1.32vw;
-	padding-left:1.32vw;
+	padding-right:calc(14px + .3621vw);
+	padding-left:calc(14px + .3621vw);
 	text-align:center;
 }
 
@@ -28,19 +28,23 @@ p {
 	color:white; 
 	font-family:'interregular', serif; 
 	text-align:left; 
-	font-size:calc(10px + 0.40621vw);
+	font-size:calc(13px + 0.3vw);
 	line-height:150%;
-	padding-right:3.96vw;
-	padding-left:3.96vw;
+	padding-right:calc(18px + 1vw);
+	padding-left:calc(20px + 1.5vw);
 }
 
 h1 {
+	font-size:calc(38px + .45vw);
 	color:white; 
-	font-size:calc(40px + .35vw);
 	font-family:'interbold', serif;
 	font-weight:700;
 	text-align:center;
 	margin-bottom:0.32vw;
+}
+
+.subtitle {
+	font-size:calc(16px + .35vw);
 }
 
 h1:hover {
@@ -53,27 +57,21 @@ h1:hover {
 h2, h3, h4, h5, h6 {
 	color:white; 
 	font-family:'interbold', serif;
-	font-weight:700;
-	font-size:calc(18px + 0.4621vw);
+	font-size:calc(19px + 0.4621vw);
 	text-align:left;
-	padding-top:0.64vw;
-	padding-right:2.64vw;
-	padding-left:2.64vw;
+	padding-top:calc(4px - .1vw);
+	padding-right:calc(16px + .4vw);
+	padding-left:calc(16px + .4vw);
 }
 
 a {
 	font-family:'interregular', serif; 
 	color:#D7B8F3;
-	font-size:calc(10px + .4621vw);
-	font-weight:400;
+	font-size:calc(13px + 0.3vw);
 	animation:mouseawaylink;
 	animation-duration: 0.15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-}
-
-.subtitle {
-	font-size:calc(18px + .2621vw);
 }
 
 a:hover {
@@ -93,12 +91,6 @@ a:focus {
 	animation:mouseoverlink;
 	animation-duration: 0s;
 	animation-fill-mode: both;
-}
-
-.space {
-	line-height:150%;
-	padding-right:3.96vw;
-	padding-left:3.96vw;
 }
 
 .maindiv {
@@ -129,7 +121,7 @@ a:focus {
 }
 
 img.cats {
-	border:calc(5px + .05vw) solid #520707;
+	border:calc(2px + .15vw) solid #520707;
 	border-radius:calc(16px + 1.75vw);
 	animation:mouseawaycats;
 	animation-duration: 0.15s;
