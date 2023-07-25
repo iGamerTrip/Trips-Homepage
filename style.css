@@ -225,13 +225,13 @@ img.cats:hover {
 
 @media screen and (max-width:768px) {
   .gallery-section .image{
-    flex: 44%;
+    flex: 45%;
   }
 
 
 @media screen and (max-width:480px) {
   .gallery-section .image{
-    flex: 44%;
+    flex: 30%;
   }
 }
 
