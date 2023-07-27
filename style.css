@@ -31,6 +31,7 @@
 
 .subtitle {
 	font-size:calc(18px + .45vw);
+	text-align:center;
 }
 
 .sidediv {
