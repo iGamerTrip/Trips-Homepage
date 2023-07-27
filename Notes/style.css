@@ -1,5 +1,5 @@
 .mainbody {
-	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/notes/frostBG.webp") no-repeat top center;
+	background:url("https://gamertrip.info/assets/notes/frostBG.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
@@ -72,6 +72,11 @@ h1 {
 	font-weight:700;
 	text-align:center;
 	margin-bottom:0.32vw;
+	animation:titleaway;
+	animation-duration:.1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+
 }
 
 h1:hover {
@@ -155,6 +160,11 @@ a:focus {
 @keyframes title {
 	from {color:white;}
 	to   {color:#4cffbc;}
+}
+
+@keyframes titleaway {
+	from {color:#4cffbc;}
+	to   {color:white;}
 }
 
 @keyframes mouseover {
