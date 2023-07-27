@@ -1,101 +1,179 @@
-body {
-	text-align:center;
-	background-color:black; 
-	background-repeat:no-repeat; 
-	background-attachment:fixed; 
-	background-size:cover;
-}
-
-p {
-	color:white; 
-	font-family:'Inter', serif; 
-	text-align:left; 
-	font-size:0.78vw;
-}
-
-h1 {
-	color:white; 
-	font-size:2.496vw; 
-	font-weight:bold; 
-	font-family:'Inter', serif;
-}
-
-h2, h3, h4, h5, h6 {
-	color:white; 
-	font-family:'Inter', serif;
-}
-
-a {
-	font-family:'Inter', serif; 
-	color:#D7B8F3;
-}
-
-a:hover {
-	font-family:'Inter', serif; 
-	color:#D4F3B9; 
-	text-decoration:none;
-}
-
-a:focus {
-	font-family:'Inter', serif; 
-	color:#D4F3B9; 
-	text-decoration:underline dashed;
-}
-
-p.space {
-	color:white; 
-	font-family:'Inter', serif; 
-	text-align:left; 
-	font-size:0.78vw; 
-	line-height:150%;
-}
-
-.notmain {
-	border:0.35rem solid #660606; 
-	padding:1rem; 
-	border-spacing:1.5rem; 
-	backdrop-filter: blur(15px); 
-	background-color:#070B1F00; 
-	border-radius: 60px; 
-	box-shadow: 0px 35px 68px 0px rgba(7, 11, 29, 0.5), inset 0px -8px 16px 0px rgba(7, 11, 29, 0.6), inset 0px 5px 15px 0px rgb(7, 11, 29);
-	animation:mouseaway;
-	animation-duration: 0.15s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-	margin-bottom:2.5rem;
-}
-
-.notmain:hover {
-	border:0.35rem solid #1D1907; 
-	padding:1rem; 
-	border-spacing:1.5rem; 
-	backdrop-filter: blur(15px); 
-	background-color:#070B1F00; 
-	border-radius: 60px; 
-	box-shadow: 0px 35px 68px 0px rgba(7, 11, 29, 0.5), inset 0px -8px 16px 0px rgba(7, 11, 29, 0.6), inset 0px 5px 15px 0px rgb(7, 11, 29);
-	animation-name:mouseover;
-	animation-duration: 0.2s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-	margin-bottom:2.5rem;
-}
-
-@keyframes mouseover {
-	from {background-color: rgba(7, 11, 31, 0); border:0.35rem solid #660606;}
-	to   {background-color: rgba(7, 11, 31, 0.2); border:0.35rem solid #520707;}
-}
-
-@keyframes mouseaway {
-	from {background-color: rgba(7, 11, 31, 0.2); border:0.35rem solid #520707;}
-	to   {background-color: rgba(7, 11, 31, 0); border:0.35rem solid #660606;}
-}
-
-body.mainbody {
-	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://media.gamertrip.info/frostBG_M.webp") no-repeat top center;
+.mainbody {
+	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/notes/frostBG.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-color:#070B1F;
-	padding-right:2.0625rem;
-	padding-left:2.0625rem;
+	padding-right:1.32vw;
+	padding-left:1.32vw;
+	text-align:center;
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('https://gamertrip.info/Inter-Regular.ttf') format('truetype');
+	font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interbold';
+    src: url('https://gamertrip.info/Inter-Bold.ttf') format('truetype');
+	font-weight: 700;
+    font-style: normal;
+}
+
+.maindiv {
+	margin-bottom:calc(6vh + 18.5vw - 40px);
+	padding-bottom:calc(14px + .3621vw);
+	padding-top:calc(14px + .3621vw);
+}
+
+.subtitle {
+	font-size:calc(18px + .45vw);
+	text-align:center;
+}
+
+.sidediv {
+	border:calc(2px + .15vw) solid #660606; 
+	padding:calc(12px + .3521vw);
+	backdrop-filter: blur(calc(8px + 0.3vw));
+	background-color:#070B1F00; 
+	border-radius:calc(16px + 1.75vw); 
+	box-shadow: 0 35px 68px 0 rgba(7, 11, 29, 0.5), inset 0 -8px 16px 0 rgba(7, 11, 29, 0.6), inset 0 5px 15px 0 rgb(7, 11, 29);
+	animation:mouseaway;
+	animation-duration: 0.15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	margin-bottom:calc(14px + .3621vw);
+}
+
+.sidediv:hover {
+	animation-name:mouseover;
+	animation-duration: 0.2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+p {
+	color:white; 
+	font-family:'interregular', serif; 
+	text-align:left; 
+	font-size:calc(13px + 0.3vw);
+	line-height:150%;
+	padding-right:calc(18px + 1vw);
+	padding-left:calc(20px + 1.5vw);
+}
+
+h1 {
+	font-size:calc(34px + 1vw);
+	color:white; 
+	font-family:'interbold', serif;
+	font-weight:700;
+	text-align:center;
+	margin-bottom:0.32vw;
+}
+
+h1:hover {
+	animation:title;
+	animation-duration:0.15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+h2, h3, h4, h5, h6 {
+	color:white; 
+	font-family:'interbold', serif;
+	font-size:calc(19px + 0.4621vw);
+	text-align:left;
+	padding-top:calc(4px - .1vw);
+	padding-right:calc(16px + .4vw);
+	padding-left:calc(16px + .4vw);
+}
+
+.footertxt {
+	color:white; 
+	font-family:'interregular', serif;
+	font-size:calc(19px + 0.3vw);
+	text-align:left;
+}
+
+a {
+	font-family:'interregular', serif; 
+	color:#D7B8F3;
+	font-size:calc(13px + 0.3vw);
+	animation:mouseawaylink;
+	animation-duration: 0.15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+a:hover {
+	font-family:'interregular', serif; 
+	color:#D4F3B9; 
+	text-decoration:none;
+	animation:mouseoverlink;
+	animation-duration: 0.2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+a:focus {
+	font-family:'interregular', serif; 
+	color:#D4F3B9; 
+	text-decoration:underline dashed;
+}
+
+/* loading different resolutions depending on screen size, anything higher than 1080p just loads the original quality */
+
+/* 1080p */
+@media screen and (max-width:2000px) {
+	.mainbody {
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/notes/frostBG_1080p(2000w).webp") no-repeat top center;
+		background-size: cover;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-color:#070B1F;
+	}
+}
+
+/* usually mobile */
+@media screen and (max-width:450px) {
+	.mainbody {
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/notes/frostBG_850h.webp") no-repeat top center;
+		background-size: cover;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-color:#070B1F;
+	}
+}
+
+
+/* disabling animations for people with reduced motion on */
+@media (prefers-reduced-motion: no-preference) {
+
+@keyframes title {
+	from {color:white;}
+	to   {color:#4cffbc;}
+}
+
+@keyframes mouseover {
+	from {background-color: rgba(7, 11, 31, 0); backdrop-filter: blur(calc(8px + 0.3vw))}
+	to   {background-color: rgba(7, 11, 31, 0.2); backdrop-filter: blur(calc(10px + 0.35vw))}
+}
+
+@keyframes mouseaway {
+	from {background-color: rgba(7, 11, 31, 0.2); backdrop-filter: blur(calc(10px + 0.35vw))}
+	to   {background-color: rgba(7, 11, 31, 0); backdrop-filter: blur(calc(8px + 0.3vw))}
+}
+
+@keyframes mouseoverlink {
+	from {color:#D7B8F3;}
+	to   {color:#D4F3B9;}
+}
+
+@keyframes mouseawaylink {
+	from {color:#D4F3B9;}
+	to   {color:#D7B8F3;}
+}
 }
