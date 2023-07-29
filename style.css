@@ -1,5 +1,5 @@
 .mainbody {
-	background:url("https://gamertrip.info/assets/home/mainBG.webp") no-repeat top center;
+	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
