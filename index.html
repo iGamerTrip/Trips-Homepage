@@ -10,6 +10,7 @@
 	<link rel="apple-touch-icon" href="assets\apple-touch-icon.png">
 	<link href="style.css" rel="stylesheet">
 	<base href="https://gamertrip.info/" target="_blank">
+	<script src="lazysizes.min.js" async=""></script>
 </head>
 <body class="mainbody">
 
@@ -36,72 +37,146 @@
 <div class="sidediv">
 	<h2>Cats are really cool and cute</h2>
 
-<!-- this HTML was used from multiwebpress -->
+<!-- this HTML framework was used from multiwebpress -->
 
 	<div class="gallery-section">
       <div class="inner-width">
         <div class="gallery">
 
-			<a href="assets\original-cats\original-momo-2-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer">
+			<a href="assets\original-cats\original-momo-2-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer" title="Momo looking silly and soft [Aug 27th, 2022]">
 				<picture>
-					<source srcset="assets\cats\no-cats_500px.webp" media="(max-width:450px)">
-					<img src="assets\cats\no-cats.webp" loading="lazy" alt="Momo looking silly and soft [Aug 27th, 2022]" class="cats"> <!-- #1 -->
+					<source
+						data-srcset="assets\cats\565px\no-cats_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\no-cats_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\no-cats_LQIP.webp"
+						data-src="assets\cats\no-cats.webp"
+						class="lazyload cats"
+						alt="Momo looking silly and soft [Aug 27th, 2022]"/>
+				</picture>
+			</a>
+
+          <a href="assets\original-cats\original-untitled.cat-2-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer" title="Untitled.cat being dangerously silly with her face pressed into the camera [Nov 5th, 2022]">
+			<picture>
+				<picture>
+					<source
+						data-srcset="assets\cats\565px\cat-close_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\cat-close_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\cat-close_LQIP.webp"
+						data-src="assets\cats\cat-close.webp"
+						class="lazyload cats"
+						alt="Untitled.cat being dangerously silly with her face pressed into the camera [Nov 5th, 2022]"/>
+				</picture>
+			</picture>
+          </a>
+
+          <a href="assets\original-cats\original-momo-3-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer" title="Momo looking all dramatic and fluffy [Aug 24th, 2022]">
+				<picture>
+					<source
+						data-srcset="assets\cats\565px\dramatic-silly_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\dramatic-silly_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\dramatic-silly_LQIP.webp"
+						data-src="assets\cats\dramatic-silly.webp"
+						class="lazyload cats"
+						alt="Momo looking all dramatic and fluffy [Aug 24th, 2022]"/>
 				</picture>
           </a>
 
-          <a href="assets\original-cats\original-untitled.cat-2-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer">
-			<picture>
-				<source srcset="assets\cats\cat-close_500px.webp" media="(max-width:450px)">
-				<img src="assets\cats\cat-close.webp" loading="lazy" alt="Untitled.cat being dangerously silly with her face pressed into the camera [Nov 5th, 2022]" class="cats"> <!-- #2 -->
-			</picture>
+          <a href="assets\original-cats\original-momo-prime-2-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer" title="Momo (prime) being the big eebi [Aug 8th, 2017]">
+				<picture>
+					<source
+						data-srcset="assets\cats\565px\big-eebi_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\big-eebi_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\big-eebi_LQIP.webp"
+						data-src="assets\cats\big-eebi.webp"
+						class="lazyload cats"
+						alt="Momo (prime) being the big eebi [Aug 8th, 2017]"/>
+				</picture>
           </a>
 
-          <a href="assets\original-cats\original-momo-3-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer">
-			<picture>
-				<source srcset="assets\cats\dramatic-silly_500px.webp" media="(max-width:450px)">
-				<img src="assets\cats\dramatic-silly.webp" loading="lazy" alt="Momo looking all dramatic and fluffy [Aug 24th, 2022]" class="cats"> <!-- #3 -->
-			</picture>
+          <a href="assets\original-cats\original-momo-1-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer" title="Momo laying in the grass [Aug 27th, 2022]">
+				<picture>
+					<source
+						data-srcset="assets\cats\565px\look-at-herrrr_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\look-at-herrrr_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\look-at-herrrr_LQIP.webp"
+						data-src="assets\cats\look-at-herrrr.webp"
+						class="lazyload cats"
+						alt="Momo laying in the grass [Aug 27th, 2022]"/>
+				</picture>
           </a>
 
-          <a href="assets\original-cats\original-momo-prime-2-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer">
-			<picture>
-				<source srcset="assets\cats\big-eebi_500px.webp" media="(max-width:450px)">
-				<img src="assets\cats\big-eebi.webp" loading="lazy" alt="Momo (prime) being the big eebi [Aug 8th, 2017]" class="cats"> <!-- #4 -->
-			</picture>
+          <a href="assets\original-cats\original-untitled.cat-1-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer" title="Untitled.cat looking at the camera cutely [Nov 10th, 2022]">
+				<picture>
+					<source
+						data-srcset="assets\cats\565px\silly-name_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\silly-name_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\silly-name_LQIP.webp"
+						data-src="assets\cats\silly-name.webp"
+						class="lazyload cats"
+						alt="Untitled.cat looking at the camera cutely [Nov 10th, 2022]"/>
+				</picture>
           </a>
 
-          <a href="assets\original-cats\original-momo-1-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer">
-			<picture>
-				<source srcset="assets\cats\look-at-herrrr_500px.webp" media="(max-width:450px)">
-				<img src="assets\cats\look-at-herrrr.webp" loading="lazy" alt="Momo laying in the grass [Aug 27th, 2022]" class="cats"> <!-- #5 -->
-			</picture>
+          <a href="assets\original-cats\cherryy,,.,.webp" class="image" target="_blank" rel="noopener noreferrer" title="cherry,,, [?]">
+				<picture>
+					<source
+						data-srcset="assets\cats\565px\cherryy,,.,_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\cherryy,,.,_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\cherryy,,.,_LQIP.webp"
+						data-src="assets\cats\cherryy,,.,.webp"
+						class="lazyload cats"
+						alt="cherry,,, [?]"/>
+				</picture>
           </a>
 
-          <a href="assets\original-cats\original-untitled.cat-1-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer">
-			<picture>
-				<source srcset="assets\cats\silly-name_500px.webp" media="(max-width:450px)">
-				<img src="assets\cats\silly-name.webp" loading="lazy" alt="Untitled.cat looking at the camera cutely [Nov 10th, 2022]" class="cats"> <!-- #6 -->
-			</picture>
-          </a>
-
-          <a href="assets\original-cats\cherryy,,.,.webp" class="image" target="_blank" rel="noopener noreferrer">
-			<picture>
-				<source srcset="assets\cats\cherryy,,.,_500px.webp" media="(max-width:450px)">
-				<img src="assets\cats\cherryy,,.,.webp" loading="lazy" alt="cherry,,, [?]" class="cats"> <!-- #7 -->
-			</picture>
-          </a>
-
-          <a href="assets\original-cats\original-momo-prime-1-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer">
-			<picture>
-				<source srcset="assets\cats\pspspspsps_500px.webp" media="(max-width:450px)">
-				<img src="assets\cats\pspspspsps.webp" loading="lazy" alt="Momo (prime) after she was pspspsps'd at [July 2nd, 2017]" class="cats"> <!-- #8 -->
-			</picture>
+          <a href="assets\original-cats\original-momo-prime-1-scaled.jpg" class="image" target="_blank" rel="noopener noreferrer" title="Momo (prime) after she was pspspsps'd at [July 2nd, 2017]">
+				<picture>
+					<source
+						data-srcset="assets\cats\565px\pspspspsps_565px.webp 565w"
+						media="(max-width: 550px)"/>
+					<source
+						data-srcset="assets\cats\750px\pspspspsps_750px.webp 750w"
+						media="(max-width: 2000px)"/>
+					<img
+						src="assets\cats\LQIP\pspspspsps_LQIP.webp"
+						data-src="assets\cats\pspspspsps.webp"
+						class="lazyload cats"
+						alt="Momo (prime) after she was pspspsps'd at [July 2nd, 2017]"/>
+				</picture>
           </a>
 
         </div>
       </div>
     </div>
-<!-- the end of the multiwebpress HTML -->
+<!-- the end of the multiwebpress HTML framework -->
 </div>
 
 <footer>
