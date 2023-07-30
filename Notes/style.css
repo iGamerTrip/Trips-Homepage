@@ -83,7 +83,7 @@ h1:hover {
 	animation-fill-mode: both;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
 	color:white; 
 	font-family:'interbold', serif;
 	font-size:calc(19px + 0.4621vw);
@@ -91,6 +91,17 @@ h2, h3, h4, h5, h6 {
 	padding-top:calc(4px - .1vw);
 	padding-right:calc(16px + .4vw);
 	padding-left:calc(16px + .4vw);
+	animation:titleaway;
+	animation-duration:.1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+h2:hover {
+	animation:title;
+	animation-duration:0.15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
 }
 
 .footertxt {
