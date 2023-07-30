@@ -142,7 +142,7 @@ a:focus {
 }
 
 img.cats {
-	border:calc(2px + .15vw) solid #520707;
+	border:calc(5px + .05vw) solid #520707;
 	border-radius:calc(16px + 1.75vw);
 	animation:mouseawaycats;
 	animation-duration: .15s;
