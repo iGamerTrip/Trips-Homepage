@@ -148,7 +148,6 @@ img.cats {
 	animation-duration: .15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	max-width: 22.29w;
 }
 
 img.cats:hover {
