@@ -127,7 +127,6 @@ a {
 }
 
 a:hover {
-	font-family:'interregular', Arial; 
 	color:#D4F3B9; 
 	text-decoration:none;
 	animation:mouseoverlink;
@@ -136,8 +135,7 @@ a:hover {
 	animation-fill-mode: both;
 }
 
-a:focus {
-	font-family:'interregular', Arial; 
+a:focus { 
 	color:#D4F3B9; 
 	text-decoration:underline dashed;
 }
