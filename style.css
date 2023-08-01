@@ -107,6 +107,16 @@ h2:hover {
 	animation-fill-mode: both;
 }
 
+h3 {
+	color:white; 
+	font-family:'interbold', serif;
+	font-size:calc(19px + .4621vw);
+	text-align:left;
+	padding-top:calc(4px - .1vw);
+	padding-right:calc(16px + .4vw);
+	padding-left:calc(10px + .8vw);
+}
+
 
 a {
 	font-family:'interregular', serif; 
