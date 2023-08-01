@@ -12,14 +12,14 @@
 
 @font-face {
     font-family: 'interregular';
-    src: url('https://gamertrip.info/Inter-Regular.ttf') format('truetype');
+    src: url('https://gamertrip.info/Inter-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-display: swap;
 }
 
 @font-face {
     font-family: 'interbold';
-    src: url('https://gamertrip.info/Inter-Bold.ttf') format('truetype');
+    src: url('https://gamertrip.info/Inter-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-display: swap;
 }
@@ -59,7 +59,7 @@
 
 p {
 	color:white; 
-	font-family:'interregular', serif; 
+	font-family:'interregular', Arial; 
 	text-align:left; 
 	font-size:calc(13px + .3vw);
 	line-height:150%;
@@ -71,7 +71,7 @@ p {
 h1 {
 	font-size:calc(34px + 1vw);
 	color:white; 
-	font-family:'interbold', serif;
+	font-family:'interbold', Arial;
 	font-weight:700;
 	text-align:center;
 	margin-bottom:0.32vw;
@@ -90,7 +90,7 @@ h1:hover {
 
 h2 {
 	color:white; 
-	font-family:'interbold', serif;
+	font-family:'interbold', Arial;
 	font-size:calc(19px + .4621vw);
 	text-align:left;
 	padding-top:calc(4px - .1vw);
@@ -117,7 +117,7 @@ h1:hover {
 }
 
 a {
-	font-family:'interregular', serif; 
+	font-family:'interregular', Arial; 
 	color:#D7B8F3;
 	font-size:calc(13px + .3vw);
 	animation:mouseawaylink;
@@ -127,7 +127,7 @@ a {
 }
 
 a:hover {
-	font-family:'interregular', serif; 
+	font-family:'interregular', Arial; 
 	color:#D4F3B9; 
 	text-decoration:none;
 	animation:mouseoverlink;
@@ -137,7 +137,7 @@ a:hover {
 }
 
 a:focus {
-	font-family:'interregular', serif; 
+	font-family:'interregular', Arial; 
 	color:#D4F3B9; 
 	text-decoration:underline dashed;
 }
