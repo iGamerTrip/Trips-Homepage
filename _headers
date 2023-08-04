@@ -1,5 +1,5 @@
 /*
-	Content-Security-Policy: default-src 'self'; img-src gamertrip.info gamertrip.xyz; script-src static.cloudflareinsights.com
+	Content-Security-Policy: default-src 'self' gamertrip.info; img-src gamertrip.info gamertrip.xyz; script-src static.cloudflareinsights.com
 
 /404
 	X-Robots-Tag: noindex
