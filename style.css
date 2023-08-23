@@ -36,10 +36,13 @@
 }
 
 .sidediv {
+	--first-bg-blur:calc(8px + .35vw);
+	--second-bg-blur:calc(15px + .4vw);
 	border:calc(2px + .15vw) solid #660606; 
 	padding:calc(12px + .3521vw);
-	backdrop-filter: blur(calc(8px + .3vw));
-	background-color:#070B1F00; 
+	-webkit-backdrop-filter: blur(var(--first-bg-blur));
+	backdrop-filter: blur(var(--first-bg-blur));
+	background-color: #070B1F00); 
 	border-radius:calc(16px + 1.75vw); 
 	box-shadow: 0 35px 68px 0 #070b1d80, inset 0 -8px 16px 0 #070b1d99, inset 0 5px 15px 0 #070b1d;
 	animation:mouseaway;
@@ -57,7 +60,7 @@
 }
 
 p {
-	color:white; 
+	color:#DBDBDB;
 	font-family:'interregular', Arial; 
 	text-align:left; 
 	font-size:calc(13px + .3vw);
@@ -67,6 +70,8 @@ p {
 }
 
 h1 {
+	--first-header-color: white;
+	--second-header-color:#4cffbc;
 	font-size:calc(34px + 1vw);
 	color:white; 
 	font-family:'interbold', Arial;
@@ -87,6 +92,8 @@ h1:hover {
 }
 
 h2 {
+	--first-header-color: white;
+	--second-header-color:#4cffbc;
 	color:white; 
 	font-family:'interbold', Arial;
 	font-size:calc(19px + .4621vw);
@@ -126,6 +133,7 @@ a {
 	animation-duration: .15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
+	border-radius: 5px;
 }
 
 a:hover {
@@ -184,66 +192,90 @@ img.cats:hover {
 	}
 }
 
-/* usually mobile */
-@media screen and (max-width:450px) {
-	.mainbody {
-		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG_850h.webp") no-repeat top center;
-		background-size: cover;
-		background-attachment:fixed;
-		background-repeat:no-repeat;
-		background-color:#070B1F;
-		background-position:50% 100%;
+/* more contrasty version for people with vision deficiencies */
+@media (prefers-contrast: more) {
+	
+	p {
+		color:white;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+	
+	a {
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+	
+	a:hover {
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+	
+	a:focus {
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+	
+	h1 {
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		--first-header-color: white;
+		--second-header-color:white;
+	}
+	
+	h2 {
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		--first-header-color: white;
+		--second-header-color:white;
+	}
+	
+	.sidediv {
+		--first-bg-blur:calc(35px + 1vw);
+		--second-bg-blur:calc(50px + 2vw);
 	}
 }
-
 
 /* disabling animations for people with reduced motion on */
 @media (prefers-reduced-motion: no-preference) {
 
-@keyframes title {
-	from {color:white;}
-	to   {color:#4cffbc;}
+	@keyframes title {
+		from {color:var(--first-header-color);}
+		to   {color:var(--second-header-color);}
+	}
+
+	@keyframes titleaway {
+		from {color:var(--second-header-color);}
+		to   {color:var(--first-header-color);}
+	}
+
+	@keyframes mouseovercats {
+		from {border:calc(5px + .05vw) solid #520707;}
+		to   {border:calc(5px + .05vw) solid #000000;}
+	}
+
+	@keyframes mouseawaycats {
+		from {border:calc(5px + .05vw) solid #000000;}
+		to   {border:calc(5px + .05vw) solid #520707;}
+	}
+
+	@keyframes mouseover {
+		from {background-color: #070b1f00; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur));}
+		to   {background-color: #070b1f33; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
+	}
+
+	@keyframes mouseaway {
+		from {background-color: #070b1f33; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
+		to   {background-color: #070b1f00; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur));}
+	}
+
+	@keyframes mouseoverlink {
+		from {color:#D7B8F3;}
+		to   {color:#D4F3B9;}
+	}
+
+	@keyframes mouseawaylink {
+		from {color:#D4F3B9;}
+		to   {color:#D7B8F3;}
+	}
 }
 
-@keyframes titleaway {
-	from {color:#4cffbc;}
-	to   {color:white;}
-}
 
-@keyframes mouseovercats {
-	from {border:calc(5px + .05vw) solid #520707;}
-	to   {border:calc(5px + .05vw) solid #000000;}
-}
-
-@keyframes mouseawaycats {
-	from {border:calc(5px + .05vw) solid #000000;}
-	to   {border:calc(5px + .05vw) solid #520707;}
-}
-
-@keyframes mouseover {
-	from {background-color: #070b1f00; backdrop-filter: blur(calc(8px + 0.3vw))}
-	to   {background-color: #070b1f33; backdrop-filter: blur(calc(10px + 0.35vw))}
-}
-
-@keyframes mouseaway {
-	from {background-color: #070b1f33; backdrop-filter: blur(calc(10px + 0.35vw))}
-	to   {background-color: #070b1f00; backdrop-filter: blur(calc(8px + 0.3vw))}
-}
-
-@keyframes mouseoverlink {
-	from {color:#D7B8F3;}
-	to   {color:#D4F3B9;}
-}
-
-@keyframes mouseawaylink {
-	from {color:#D4F3B9;}
-	to   {color:#D7B8F3;}
-}
-
-}
-
-
-/* VV this CSS is by multiwebpress, thanks! VV */
+/* VV this CSS is mainly by multiwebpress, thanks! VV */
 
 
 .inner-width{
@@ -268,25 +300,35 @@ img.cats:hover {
 }
 
 .gallery-section .image img{
-  max-width: 100%;
+	max-width: 100%;
 }
 
 @media screen and (max-width:960px) {
-  .gallery-section .image{
-    flex: 20%;
-  }
+	.gallery-section .image{
+		flex: 20%;
+	}
 }
 
 @media screen and (max-width:768px) {
-  .gallery-section .image{
-    flex: 45%;
-  }
+	.gallery-section .image{
+		flex: 45%;
+	}
+}
 
-
+/* also switch to the lower res background */
 @media screen and (max-width:480px) {
-  .gallery-section .image{
-    flex: 30%;
-  }
+	.gallery-section .image{
+		flex: 30%;
+	}
+
+	.mainbody {
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG_850h.webp") no-repeat top center;
+		background-size: cover;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-color:#070B1F;
+		background-position:50% 100%;
+	}
 }
 
 
