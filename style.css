@@ -157,6 +157,24 @@ a:focus {
 	text-align:left;
 }
 
+.footerlink {
+	color:#D7B8F3; 
+	font-family:'interregular', Arial;
+	font-size:calc(19px + .3vw);
+	text-align:left;
+	animation:mouseawaylink
+	animation-duration: .15s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+.footerlink:hover {
+	animation:mouseoverlink;
+	animation-duration: .2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
 img.cats {
 	border:calc(5px + .05vw) solid #520707;
 	border-radius:calc(16px + 1.75vw);
@@ -278,18 +296,21 @@ img.cats:hover {
 /* VV this CSS is mainly by multiwebpress, thanks! VV */
 
 
-.inner-width{
+/*.inner-width{
 	margin: auto;
 }
 
 .gallery-section .gallery a {
-	padding:calc(10px + .1vw);
-}
+	padding:10px;
+}*/
 
 .gallery-section .gallery{
 	display: flex;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	justify-content: center;
+	align-items: baseline;
+	align-content: center;
+	gap:10px;
 }
 
 .gallery-section .image{
@@ -300,25 +321,61 @@ img.cats:hover {
 }
 
 .gallery-section .image img{
-	max-width: 100%;
+	width: 70%;
 }
 
 @media screen and (max-width:960px) {
+	.gallery-section .image img{
+		width: 95%;
+	}
+
 	.gallery-section .image{
 		flex: 20%;
+	}
+	
+	.gallery-section .gallery a {
+		padding: calc(10px + .1vw);
+	}
+	
+	.gallery-section .gallery {
+		gap: 0;
 	}
 }
 
 @media screen and (max-width:768px) {
+	.gallery-section .image img{
+		width: 100%;
+	}
+
 	.gallery-section .image{
-		flex: 45%;
+		flex: 30%;
+	}
+	
+	.gallery-section .gallery a {
+		padding: calc(10px + .1vw);
+	}
+	
+		.gallery-section .gallery {
+		gap: 0;
 	}
 }
 
 /* also switch to the lower res background */
 @media screen and (max-width:480px) {
+	.gallery-section .image img{
+		width: 100%;
+	}
+	
 	.gallery-section .image{
 		flex: 30%;
+	}
+	
+	.gallery-section .gallery a {
+		padding: calc(10px + .1vw);
+	}
+	
+	.gallery-section .gallery {
+		gap: 0;
 	}
 
 	.mainbody {
