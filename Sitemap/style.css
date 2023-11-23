@@ -1,5 +1,5 @@
 .mainbody {
-	background: linear-gradient(to top, #00000033, #00000033), url("https://gamertrip.xyz/assets/sitemap/sitemapBG.webp") no-repeat top center;
+	background: linear-gradient(to top, #00000033, #00000033), url("https://gamertrip.info/assets/sitemap/sitemapBG.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
@@ -12,14 +12,14 @@
 
 @font-face {
     font-family: 'interregular';
-    src: url('https://gamertrip.xyz/Inter-Regular.woff2') format('woff2');
+    src: url('https://gamertrip.info/Inter-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-display: swap;
 }
 
 @font-face {
     font-family: 'interbold';
-    src: url('https://gamertrip.xyz/Inter-Bold.woff2') format('woff2');
+    src: url('https://gamertrip.info/Inter-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-display: swap;
 }
@@ -152,7 +152,7 @@ a:focus {
 /* usually mobile */
 @media screen and (max-width:480px) {
 	.mainbody {
-		background: linear-gradient(to top, #00000033, #00000033), url("https://gamertrip.xyz/assets/sitemap/sitemapBG_850h.webp") no-repeat top center;
+		background: linear-gradient(to top, #00000033, #00000033), url("https://gamertrip.info/assets/sitemap/sitemapBG_850h.webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;

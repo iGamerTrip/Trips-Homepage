@@ -1,5 +1,5 @@
 .mainbody {
-	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.xyz/assets/home/mainBG.webp") no-repeat top center;
+	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
@@ -201,7 +201,7 @@ img.cats:hover {
 /* 1080p */
 @media screen and (max-width:2000px) {
 	.mainbody {
-		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.xyz/assets/home/mainBG_1080p(2000w).webp") no-repeat top center;
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG_1080p(2000w).webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
@@ -379,7 +379,7 @@ img.cats:hover {
 	}
 
 	.mainbody {
-		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.xyz/assets/home/mainBG_850h.webp") no-repeat top center;
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG_850h.webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
