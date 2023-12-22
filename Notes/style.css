@@ -1,5 +1,5 @@
 .mainbody {
-	background: linear-gradient(to top, #00000033, #00000033), url("https://gamertrip.info/assets/notes/frostBG.webp") no-repeat top center;
+	background: linear-gradient(to top, #00000033, #00000033), url("/assets/notes/frostBG.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
@@ -11,14 +11,14 @@
 
 @font-face {
     font-family: 'interregular';
-    src: url('https://gamertrip.info/Inter-Regular.woff2') format('woff2');
+    src: url('/Inter-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-display: swap;
 }
 
 @font-face {
     font-family: 'interbold';
-    src: url('https://gamertrip.info/Inter-Bold.woff2') format('woff2');
+    src: url('/Inter-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-display: swap;
 }
@@ -196,7 +196,7 @@ a:focus {
 /* 1080p */
 @media screen and (max-width:2000px) {
 	.mainbody {
-		background: linear-gradient(to top, #00000033, #00000033), url("https://gamertrip.info/assets/notes/frostBG_1080p(2000w).webp") no-repeat top center;
+		background: linear-gradient(to top, #00000033, #00000033), url("/assets/notes/frostBG_1080p(2000w).webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
@@ -208,7 +208,7 @@ a:focus {
 /* usually mobile */
 @media screen and (max-width:480px) {
 	.mainbody {
-		background: linear-gradient(to top, #00000033, #00000033), url("https://gamertrip.info/assets/notes/frostBG_850h.webp") no-repeat top center;
+		background: linear-gradient(to top, #00000033, #00000033), url("/assets/notes/frostBG_850h.webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
