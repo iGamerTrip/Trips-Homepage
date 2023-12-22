@@ -1,12 +1,11 @@
 .mainbody {
-	background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG.webp") no-repeat top center;
+	background: linear-gradient(to top, #070B1F66, #070B1F33), url("/assets/home/mainBG.webp") no-repeat top center;
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-color:#070B1F;
 	padding-right:1.32vw;
 	padding-left:1.32vw;
-	text-align:center;
 	background-position:50% 100%;
 }
 
@@ -25,14 +24,25 @@
 }
 
 .maindiv {
-	margin-bottom:calc(17vh + 17.3vw - 40px);
+	margin-bottom:calc(6vh + 4vw - 40px);
 	padding-bottom:calc(14px + .3621vw);
 	padding-top:calc(14px + .3621vw);
+	
+  &:after {
+    content: '';
+    position: absolute;
+    inset: 0%;
+    backdrop-filter: blur(calc(4px + .1vw));
+    -webkit-mask: linear-gradient(0deg, transparent, black calc(90% + 10vh - 5vw));
+	z-index:-1;
+  }
 }
 
 .subtitle {
 	font-size:calc(18px + .45vw);
-	text-align:center;
+	text-align:right;
+	float:right;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .sidediv {
@@ -60,7 +70,7 @@
 }
 
 p {
-	color:#DBDBDB;
+	color:white;
 	font-family:'interregular', Arial; 
 	text-align:left; 
 	font-size:calc(13px + .3vw);
@@ -72,12 +82,15 @@ p {
 h1 {
 	--first-header-color: white;
 	--second-header-color:#4cffbc;
-	font-size:calc(34px + 1vw);
+	font-size:calc(20px + 1vw);
 	color:white; 
 	font-family:'interbold', Arial;
 	font-weight:700;
-	text-align:center;
+	display:inline;
+	text-align:left;
 	margin-bottom:0.32vw;
+	margin-top:calc(-2.5vh + 5vw / 2);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	animation:titleaway;
 	animation-duration:.1s;
 	animation-timing-function: ease-in-out;
@@ -162,7 +175,7 @@ a:focus {
 	font-family:'interregular', Arial;
 	font-size:calc(19px + .3vw);
 	text-align:left;
-	animation:mouseawaylink
+	animation:mouseawaylink;
 	animation-duration: .15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
@@ -191,6 +204,10 @@ img.cats:hover {
 	animation-fill-mode: both;
 }
 
+a.image {
+	text-align:center;
+}
+
 .discord {
 	max-width:calc(12px + .40621vw);
 	height:auto;
@@ -201,7 +218,7 @@ img.cats:hover {
 /* 1080p */
 @media screen and (max-width:2000px) {
 	.mainbody {
-		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG_1080p(2000w).webp") no-repeat top center;
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("/assets/home/mainBG_1080p(2000w).webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
@@ -214,7 +231,6 @@ img.cats:hover {
 @media (prefers-contrast: more) {
 	
 	p {
-		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	}
 	
@@ -379,7 +395,7 @@ img.cats:hover {
 	}
 
 	.mainbody {
-		background: linear-gradient(to top, #070B1F66, #070B1F33), url("https://gamertrip.info/assets/home/mainBG_850h.webp") no-repeat top center;
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("/assets/home/mainBG_850h.webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
@@ -390,3 +406,4 @@ img.cats:hover {
 
 
 /* ^^ the end of the multiwebpress CSS, thanks again! */
+
