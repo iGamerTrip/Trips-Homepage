@@ -3,7 +3,7 @@
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
-	background-color:#070B1F;
+	background-color:black;
 	padding-right:1.32vw;
 	padding-left:1.32vw;
 	text-align:center;
@@ -40,7 +40,6 @@
 	animation-duration: 0.15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	/* margin-bottom:calc(14px + .3621vw); */
 }
 
 h1.mainheader {
@@ -191,16 +190,16 @@ a:focus {
 	text-decoration:underline dashed;
 }
 
-/* loading different resolutions depending on screen size, anything higher than 1080p just loads the original quality */
+/* loading different resolutions depending on screen size, anything higher than 1080p just loads the original quality
 
-/* 1080p */
+ 1080p */
 @media screen and (max-width:2000px) {
 	.mainbody {
 		background: linear-gradient(to top, #00000033, #00000033), url("/assets/notes/frostBG_1080p(2000w).webp") no-repeat top center;
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
-		background-color:#070B1F;
+		background-color:black;
 		background-position: 50% 30%;
 	}
 }
@@ -212,7 +211,7 @@ a:focus {
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
-		background-color:#070B1F;
+		background-color:black;
 		background-position: 85% 50%;
 	}
 }
