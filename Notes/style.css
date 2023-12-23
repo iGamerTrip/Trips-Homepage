@@ -32,7 +32,6 @@
 .subtitle {
 	font-size:calc(18px + .45vw);
 	text-align:center;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .sidediv {
@@ -78,7 +77,6 @@ h1 {
 	font-weight:700;
 	text-align:center;
 	margin-bottom:0.32vw;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	animation:titleaway;
 	animation-duration:.1s;
 	animation-timing-function: ease-in-out;
@@ -204,6 +202,7 @@ a:focus {
 	
 	h1 {
 		--second-header-color:white;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	}
 	
 	h2 {
