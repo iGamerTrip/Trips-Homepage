@@ -43,7 +43,7 @@
 	padding:calc(12px + .3521vw);
 	-webkit-backdrop-filter: blur(var(--first-bg-blur));
 	backdrop-filter: blur(var(--first-bg-blur));
-	background-color: #070B1F00); 
+	background-color:#070B1F00; 
 	border-radius:calc(16px + 1.75vw); 
 	box-shadow: 0 35px 68px 0 #070b1d80, inset 0 -8px 16px 0 #070b1d99, inset 0 5px 15px 0 #070b1d;
 	animation:mouseaway;
@@ -126,6 +126,12 @@ h3 {
 	padding-left:calc(10px + .8vw);
 }
 
+.footertxt {
+	color:white; 
+	font-family:'interregular', Arial;
+	font-size:calc(19px + .3vw);
+	text-align:left;
+}
 
 a {
 	font-family:'interregular', Arial; 
@@ -152,31 +158,6 @@ a:focus {
 	text-decoration:underline dashed;
 }
 
-.footertxt {
-	color:white; 
-	font-family:'interregular', Arial;
-	font-size:calc(19px + .3vw);
-	text-align:left;
-}
-
-.footerlink {
-	color:#D7B8F3; 
-	font-family:'interregular', Arial;
-	font-size:calc(19px + .3vw);
-	text-align:left;
-	animation:mouseawaylink;
-	animation-duration: .15s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-}
-
-.footerlink:hover {
-	animation:mouseoverlink;
-	animation-duration: .2s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-}
-
 img.cats {
 	border:calc(5px + .05vw) solid #520707;
 	border-radius:calc(16px + 1.75vw);
@@ -196,20 +177,6 @@ img.cats:hover {
 .discord {
 	max-width:calc(12px + .40621vw);
 	height:auto;
-}
-
-/* loading different resolutions depending on screen size, anything higher than 1080p just loads the original quality
-
- 1080p */
-@media screen and (max-width:2000px) {
-	.mainbody {
-		background: linear-gradient(to top, #070B1F66, #070B1F33), url("assets/home/mainBG_1080p(2000w).webp") no-repeat top center;
-		background-size: cover;
-		background-attachment:fixed;
-		background-repeat:no-repeat;
-		background-color:black;
-		background-position:50% 100%;
-	}
 }
 
 /* more contrasty version for people with vision deficiencies */
@@ -232,14 +199,11 @@ img.cats:hover {
 	}
 	
 	h1 {
-		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-		--first-header-color: white;
 		--second-header-color:white;
 	}
 	
 	h2 {
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-		--first-header-color: white;
 		--second-header-color:white;
 	}
 	
@@ -273,13 +237,13 @@ img.cats:hover {
 	}
 
 	@keyframes mouseover {
-		from {background-color: #070b1f00; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur));}
-		to   {background-color: #070b1f33; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
+		from {background-color:#070b1f00; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur));}
+		to   {background-color:#070b1f33; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur));}
 	}
 
 	@keyframes mouseaway {
-		from {background-color: #070b1f33; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
-		to   {background-color: #070b1f00; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur));}
+		from {background-color:#070b1f33; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur));}
+		to   {background-color:#070b1f00; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur));}
 	}
 
 	@keyframes mouseoverlink {
@@ -361,8 +325,31 @@ img.cats:hover {
 	}
 }
 
+/* loading different resolutions depending on screen size, anything higher than 1080p just loads the original quality
+
+ 1080p */
+@media screen and (max-width:2000px) {
+	.mainbody {
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("assets/home/mainBG_1080p(2000w).webp") no-repeat top center;
+		background-size: cover;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-color:black;
+		background-position:50% 100%;
+	}
+}
+
 /* also switch to the lower res background */
 @media screen and (max-width:480px) {
+	.mainbody {
+		background: linear-gradient(to top, #070B1F66, #070B1F33), url("assets/home/mainBG_850h.webp") no-repeat top center;
+		background-size: cover;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-color:black;
+		background-position:50% 100%;
+	}
+	
 	.gallery-section .image img{
 		width: 100%;
 	}
@@ -377,15 +364,6 @@ img.cats:hover {
 	
 	.gallery-section .gallery {
 		gap: 0;
-	}
-
-	.mainbody {
-		background: linear-gradient(to top, #070B1F66, #070B1F33), url("assets/home/mainBG_850h.webp") no-repeat top center;
-		background-size: cover;
-		background-attachment:fixed;
-		background-repeat:no-repeat;
-		background-color:black;
-		background-position:50% 100%;
 	}
 }
 
