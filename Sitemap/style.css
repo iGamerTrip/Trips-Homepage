@@ -3,7 +3,7 @@
 	background-size: cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
-	background-color:#070B1F;
+	background-color:black;
 	padding-right:1.32vw;
 	padding-left:1.32vw;
 	text-align:center;
@@ -33,6 +33,7 @@
 .subtitle {
 	font-size:calc(18px + .45vw);
 	text-align:center;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .sidediv {
@@ -40,7 +41,6 @@
 	--second-bg-blur:calc(15px + .4vw);
 	border:calc(2px + .15vw) solid #660606; 
 	padding:calc(12px + .3521vw);
-	padding-top:calc(16px + .4vw);
 	-webkit-backdrop-filter: blur(var(--first-bg-blur));
 	backdrop-filter: blur(var(--first-bg-blur));
 	background-color:#070B1F00; 
@@ -61,29 +61,29 @@
 }
 
 p {
-	color:#DBDBDB; 
+	color:white;
 	font-family:'interregular', Arial; 
 	text-align:left; 
 	font-size:calc(13px + .3vw);
 	line-height:150%;
 	padding-right:calc(18px + 1vw);
 	padding-left:calc(20px + 1.5vw);
-	margin-top:1rem;
 }
 
 h1 {
+	--first-header-color: white;
+	--second-header-color:#4cffbc;
 	font-size:calc(34px + 1vw);
 	color:white; 
 	font-family:'interbold', Arial;
 	font-weight:700;
 	text-align:center;
 	margin-bottom:0.32vw;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	animation:titleaway;
 	animation-duration:.1s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	--first-header-color: white;
-	--second-header-color:#4cffbc;
 }
 
 h1:hover {
@@ -94,6 +94,8 @@ h1:hover {
 }
 
 h2 {
+	--first-header-color: white;
+	--second-header-color:#4cffbc;
 	color:white; 
 	font-family:'interbold', Arial;
 	font-size:calc(19px + .4621vw);
@@ -105,18 +107,9 @@ h2 {
 	animation-duration:.1s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	--first-header-color: white;
-	--second-header-color:#4cffbc;
 }
 
 h2:hover {
-	animation:title;
-	animation-duration:.15s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: both;
-}
-
-h1:hover {
 	animation:title;
 	animation-duration:.15s;
 	animation-timing-function: ease-in-out;
@@ -131,6 +124,7 @@ a {
 	animation-duration: .15s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
+	border-radius: 5px;
 }
 
 a:hover {
@@ -142,7 +136,7 @@ a:hover {
 	animation-fill-mode: both;
 }
 
-a:focus { 
+a:focus {
 	color:#D4F3B9; 
 	text-decoration:underline dashed;
 }
@@ -156,7 +150,7 @@ a:focus {
 		background-size: cover;
 		background-attachment:fixed;
 		background-repeat:no-repeat;
-		background-color:#070B1F;
+		background-color:black;
 		background-position:90% 100%;
 	}
 }
@@ -165,7 +159,6 @@ a:focus {
 @media (prefers-contrast: more) {
 	
 	p {
-		color:white;
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	}
 	
@@ -182,14 +175,11 @@ a:focus {
 	}
 	
 	h1 {
-		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-		--first-header-color: white;
 		--second-header-color:white;
 	}
 	
 	h2 {
 		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-		--first-header-color: white;
 		--second-header-color:white;
 	}
 	
@@ -213,13 +203,13 @@ a:focus {
 	}
 
 	@keyframes mouseover {
-		from {background-color:#00000033; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur)}
-		to   {background-color:#00000066; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
+		from {background-color:#070b1f33; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur)}
+		to   {background-color:#070b1f66; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
 	}
 
 	@keyframes mouseaway {
-		from {background-color:#00000066; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
-		to   {background-color:#00000033; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur))}
+		from {background-color:#070b1f66; -webkit-backdrop-filter: blur(var(--second-bg-blur)); backdrop-filter: blur(var(--second-bg-blur))}
+		to   {background-color:#070b1f33; -webkit-backdrop-filter: blur(var(--first-bg-blur)); backdrop-filter: blur(var(--first-bg-blur))}
 	}
 
 	@keyframes mouseoverlink {
